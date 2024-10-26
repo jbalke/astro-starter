@@ -1,0 +1,25 @@
+---
+import { buttonVariants } from "@/components/ui/button";
+import Layout from "../layouts/Layout.astro";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Terminal } from "lucide-react";
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<div class="mx-auto w-1/2 text-center p-8">
+			<h1 class="text-3xl font-bold mb-4">Page 2</h1>
+			<Alert>
+				<Terminal className="h-4 w-4" />
+				<AlertTitle>Heads up!</AlertTitle>
+				<AlertDescription>
+					You can add components and dependencies to your app using the cli.
+				</AlertDescription>
+			</Alert>
+
+			<a class={`${buttonVariants({ variant: "default" })} mt-16`} href="/"
+				>Go home</a
+			>
+		</div>
+	</main>
+</Layout>

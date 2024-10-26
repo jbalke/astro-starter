@@ -1,7 +1,7 @@
 ---
-import "@/styles/globals.css"
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { buttonVariants } from "@/components/ui/button";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -34,9 +34,15 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">Astro</span></h1>
+		<h1>
+			Welcome to <span
+				class="text-gradient bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"
+				>Astro</span
+			>
+		</h1>
 		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
+			To get started, open the directory <code>src/pages</code> in your project.<br
+			/>
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
 		<ul role="list" class="link-card-grid">
@@ -61,6 +67,11 @@ import Card from '../components/Card.astro';
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
 		</ul>
+		<div class="flex justify-center mt-16">
+			<a class={`${buttonVariants({ variant: "default" })}`} href="/page2"
+				>Page 2</a
+			>
+		</div>
 	</main>
 </Layout>
 
@@ -97,7 +108,10 @@ import Card from '../components/Card.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid hsl(var(--border), 25%);
-		background: linear-gradient(hsl(var(--accent-foreground) / 66%), hsl(var(--accent-foreground) / 33%));
+		background: linear-gradient(
+			hsl(var(--accent-foreground) / 66%),
+			hsl(var(--accent-foreground) / 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
