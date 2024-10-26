@@ -3,7 +3,8 @@
 		"astro-build.astro-vscode",
 		"bradlc.vscode-tailwindcss",
 		"austenc.tailwind-docs",
-		"dexxiez.shadcn-color-preview"
+		"dexxiez.shadcn-color-preview",
+		"formulahendry.auto-rename-tag"
 	],
 	"unwantedRecommendations": []
 }
