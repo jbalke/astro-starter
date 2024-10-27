@@ -63,6 +63,7 @@ export default {
 		require("tailwindcss-animate"),
 		require("@tailwindcss/typography"),
 		require("daisyui"),
+		addVariablesForColors,
 	],
 	daisyui: {
 		themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]
