@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 const {
 	default: flattenColorPalette,
@@ -60,6 +61,11 @@ export default {
 					5: "hsl(var(--chart-5))",
 				},
 			},
+		},
+		fontFamily: {
+			sans: ["Roboto", ...defaultTheme.fontFamily.sans],
+			display: ["Roboto", "sans-serif"],
+			body: ["Roboto", "serif"],
 		},
 	},
 	plugins: [
